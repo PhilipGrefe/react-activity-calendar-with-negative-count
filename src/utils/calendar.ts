@@ -24,9 +24,9 @@ export function validateActivities(activities: Array<Activity>, maxLevel: number
       throw new Error(`Activity date '${date}' is not a valid ISO 8601 date string.`);
     }
 
-    if (count < 0) {
-      throw new RangeError(`Activity count must not be negative, found ${count}.`);
-    }
+    // if (count < 0) {
+    //   throw new RangeError(`Activity count must not be negative, found ${count}.`);
+    // }
 
     if (level < 0 || level > maxLevel) {
       throw new RangeError(
